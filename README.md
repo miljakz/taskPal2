@@ -2,7 +2,7 @@
 
 ## Opis projekta
 
-TaskPal je aplikacija za upravljanje zadacima koja koristi C#, JavaScript i Vue CLI. Dizajnirana je za poboljšanje produktivnosti i efikasnosti tima, omogućujući korisnicima da stvaraju i prate zadatke unutar tima.
+TaskPal je aplikacija za upravljanje zadacima koja koristi C#, JavaScript i Vue CLI. Dizajnirana je za poboljšanje produktivnosti i efikasnosti tima, omogućujući korisnicima da stvaraju i prate zadatke unutar tima. Dizajnirana je kao dio kolegija Programsko inženjerstvo.
 
 ## Tehnologije
 
