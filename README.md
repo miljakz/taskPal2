@@ -1,24 +1,69 @@
-# TaskPal
+TaskPal je jednostavna aplikacija za upravljanje zadacima izrađena pomoću Vue.js za korisničko sučelje, Node.js s Expressom za backend, te Firebase za autentifikaciju i pohranu podataka.
 
-## Opis projekta
+Značajke
+Autentifikacija korisnika:
 
-TaskPal je aplikacija za upravljanje zadacima koja koristi C#, JavaScript i Vue CLI. Dizajnirana je za poboljšanje produktivnosti i efikasnosti tima, omogućujući korisnicima da stvaraju i prate zadatke unutar tima. Dizajnirana je kao dio kolegija Programsko inženjerstvo.
+Sigurna prijava i registracija koristeći Firebase Authentication.
+Autentifikacija putem lozinke s e-poštom i lozinkom.
+Upravljanje zadacima:
 
-## Tehnologije
+Dodavanje zadataka s naslovima i kategorijama.
+Filtriranje zadataka prema kategorijama.
+Brisanje pojedinačnih zadataka.
+Upravljanje kategorijama:
 
-- **C#**: Većina back-end logike napisana je u C#. C# se koristi za upravljanje bazom podataka i posluživanje API-ja koji omogućuje korisnicima da se prijave, stvaraju zadatke i projekte te ih označavaju kao gotove.
-- **JavaScript**: Koristimo JavaScript za neke funkcionalnosti na klijentskoj strani. To uključuje interakciju s API-jem, renderiranje korisničkog sučelja i upravljanje stanjem aplikacije.
-- **Vue CLI**: Vue CLI koristimo za izgradnju korisničkog sučelja. Vue CLI omogućuje brzo prototipiranje, lako upravljanje komponentama i efikasno testiranje.
+Dodavanje novih kategorija za organizaciju zadataka.
+Brisanje postojećih kategorija.
+Preduvjeti
+Prije pokretanja TaskPal lokalno, provjerite imate li instalirano sljedeće:
 
-## Funkcionalnosti
+Node.js (verzija >= 12.0.0)
+npm (Node Package Manager)
+Instalacija
+Klonirajte repozitorij:
 
-- **Prijava korisnika**: Korisnici se mogu prijaviti u aplikaciju koristeći svoje korisničke podatke.
-- **Stvaranje zadataka i projekata**: Nakon prijave, korisnici mogu stvoriti nove zadatke i projekte.
-- **Označavanje zadataka kao gotovih**: Korisnici mogu označiti zadatke kao gotove kada su završeni.
+bash
+Kopiraj kod
+git clone <repository-url>
+cd taskpal
+Instalirajte ovisnosti:
 
-## Instalacija
+bash
+Kopiraj kod
+npm install
+Postavite Firebase:
 
-1. Klonirajte repozitorij: `[git clone https://github.com/miljakz/taskpal2.git]`
-2. Instalirajte ovisnosti: `npm install`
-3. Pokrenite aplikaciju: `npm start`
+Kreirajte Firebase projekt na Firebase konzoli.
+Dobavite svoju konfiguraciju Firebase (firebaseConfig) i vjerodajnice Firebase Admin SDK (serviceAccountKey.json).
+Konfigurirajte Firebase:
 
+Zamijenite firebaseConfig u src/app.js s konfiguracijom vašeg Firebase projekta.
+Stavite svoje vjerodajnice Firebase Admin SDK (serviceAccountKey.json) u korijenski direktorij.
+Pokrenite poslužitelj:
+
+bash
+Kopiraj kod
+npm start
+Ovo će pokrenuti poslužitelj na adresi http://localhost:3000.
+
+Otvorite TaskPal u vašem pregledniku:
+Otvorite http://localhost:3000 da biste vidjeli aplikaciju.
+
+Upotreba
+Prijava: Unesite svoju registriranu e-poštu i lozinku za prijavu.
+Upravljanje zadacima:
+Dodajte zadatke unosom naslova i odabirom kategorije.
+Uklonite zadatke klikom na "Ukloni" gumb.
+Filtrirajte zadatke odabirom kategorije iz padajućeg izbornika.
+Upravljanje kategorijama:
+Dodajte nove kategorije koristeći polje za unos i gumb "Dodaj kategoriju".
+Uklonite kategorije klikom na "Ukloni" gumb pokraj svake kategorije.
+Struktura mape
+node_modules/: Ovisnosti instalirane putem npm-a.
+public/: Statički resursi i index.html.
+src/: Backend (server.js, middleware, rute) i frontend (app.js, Vue komponente).
+Doprinose
+Doprinosi su dobrodošli! Molimo vas da slijedite smjernice GitHub-a za pull zahtjeve.
+
+Licenca
+Ovaj projekt je licenciran pod MIT Licencom - pogledajte LICENSE datoteku za detalje.
